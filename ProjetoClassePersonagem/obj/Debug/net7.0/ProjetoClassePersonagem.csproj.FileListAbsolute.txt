@@ -1,0 +1,15 @@
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\bin\Debug\net7.0\ProjetoClassePersonagem.exe
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\bin\Debug\net7.0\ProjetoClassePersonagem.deps.json
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\bin\Debug\net7.0\ProjetoClassePersonagem.runtimeconfig.json
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\bin\Debug\net7.0\ProjetoClassePersonagem.dll
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\bin\Debug\net7.0\ProjetoClassePersonagem.pdb
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.csproj.AssemblyReference.cache
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.AssemblyInfoInputs.cache
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.AssemblyInfo.cs
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.csproj.CoreCompileInputs.cache
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.dll
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\refint\ProjetoClassePersonagem.dll
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.pdb
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ProjetoClassePersonagem.genruntimeconfig.cache
+C:\Users\32784630803\desktop\POO\ProjetoClassePersonagem\obj\Debug\net7.0\ref\ProjetoClassePersonagem.dll
