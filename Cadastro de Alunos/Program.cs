@@ -17,31 +17,34 @@ using Cadastro_de_Alunos;
 
 Aluno aluno = new Aluno();
 
+Console.WriteLine($"\n*****Bem Vindo ao programa Média do Aluno*****");
 
-Console.Write("Digite o nome do aluno:");
+Console.Write("\nDigite o nome do aluno: ");
 aluno.Nome = Console.ReadLine();
 
-Console.Write("Digite o curso do aluno:");
+Console.Write("\nDigite o curso do aluno: ");
 aluno.Curso = Console.ReadLine();
 
-Console.Write("Digite a idade do aluno:");
+Console.Write("\nDigite a idade do aluno: ");
 aluno.Idade = int.Parse(Console.ReadLine());
 
-Console.Write("Digite o RG do aluno:");
+Console.Write("\nDigite o RG do aluno: ");
 aluno.RG = Console.ReadLine();
 
-Console.Write("O aluno é bolsista? (true/false)");
+Console.Write("\nO aluno é bolsista? (true/false): ");
 aluno.Bolsista = bool.Parse(Console.ReadLine().ToLower());
 
-Console.Write("Digite a média final do aluno:");
+Console.Write("\nDigite a média final do aluno: ");
 aluno.MediaFinal = double.Parse(Console.ReadLine());
 
-Console.Write("Digite o valor da mensalidade:");
+Console.Write("\nDigite o valor da mensalidade: ");
 aluno.ValorMensalidade = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Escolha uma das opções abaixo:");
+Console.ForegroundColor = ConsoleColor.DarkCyan;
+Console.WriteLine("\nEscolha uma das opções abaixo:2");
 Console.WriteLine("1 - Ver média final");
 Console.WriteLine("2 - Ver valor da mensalidade");
+Console.ResetColor();
 
 int opcao = int.Parse(Console.ReadLine());
 
@@ -59,7 +62,6 @@ else
 }
 
 
-    
 
 
 
@@ -78,6 +80,9 @@ else
 
 
 
-    
 
-    
+
+
+
+
+

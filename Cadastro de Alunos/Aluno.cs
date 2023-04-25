@@ -18,7 +18,9 @@ namespace Cadastro_de_Alunos
 
         public void VerMediaFinal()
         {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("A média final do aluno " + Nome + " é " + MediaFinal);
+            Console.ResetColor();
         }
 
         public void VerMensalidade()
