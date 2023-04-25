@@ -19,7 +19,7 @@ namespace Cadastro_de_Alunos
         public void VerMediaFinal()
         {
             Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine("A média final do aluno " + Nome + " é " + MediaFinal);
+            Console.WriteLine("A média final do aluno " + this.Nome + " é " + this.MediaFinal);
             Console.ResetColor();
         }
 
@@ -31,7 +31,7 @@ namespace Cadastro_de_Alunos
             }
             else if (Bolsista && MediaFinal > 6 && MediaFinal < 8)
             {
-                ValorMensalidade = 0.3 * ValorMensalidade;
+                ValorMensalidade = 0.7 * ValorMensalidade;
             }
             else
             {

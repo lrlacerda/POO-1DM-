@@ -1,0 +1,5 @@
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.csproj.AssemblyReference.cache
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.AssemblyInfoInputs.cache
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.AssemblyInfo.cs
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.csproj.CoreCompileInputs.cache

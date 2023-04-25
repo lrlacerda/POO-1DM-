@@ -34,11 +34,26 @@ aluno.RG = Console.ReadLine();
 Console.Write("\nO aluno é bolsista? (true/false): ");
 aluno.Bolsista = bool.Parse(Console.ReadLine().ToLower());
 
+// Console.Write("\nO aluno é bolsista? (s/n): ");
+// string resposta = Console.ReadLine().ToLower();
+
+// aluno.Bolsista = resposta == "s" ? true : false;
+
+// if (resposta == "s")
+// {
+//     aluno.Bolsista = true;
+// }
+// else
+// {
+//     aluno.Bolsista = false;
+// }
+
 Console.Write("\nDigite a média final do aluno: ");
 aluno.MediaFinal = double.Parse(Console.ReadLine());
 
 Console.Write("\nDigite o valor da mensalidade: ");
 aluno.ValorMensalidade = double.Parse(Console.ReadLine());
+
 
 Console.ForegroundColor = ConsoleColor.DarkCyan;
 Console.WriteLine("\nEscolha uma das opções abaixo:2");
