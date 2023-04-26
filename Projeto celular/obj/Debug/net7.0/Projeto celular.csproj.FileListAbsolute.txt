@@ -3,3 +3,13 @@ C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celula
 C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.AssemblyInfoInputs.cache
 C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.AssemblyInfo.cs
 C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.csproj.CoreCompileInputs.cache
+C:\Users\32784630803\Desktop\POO\Projeto celular\bin\Debug\net7.0\Projeto celular.exe
+C:\Users\32784630803\Desktop\POO\Projeto celular\bin\Debug\net7.0\Projeto celular.deps.json
+C:\Users\32784630803\Desktop\POO\Projeto celular\bin\Debug\net7.0\Projeto celular.runtimeconfig.json
+C:\Users\32784630803\Desktop\POO\Projeto celular\bin\Debug\net7.0\Projeto celular.dll
+C:\Users\32784630803\Desktop\POO\Projeto celular\bin\Debug\net7.0\Projeto celular.pdb
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.dll
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\refint\Projeto celular.dll
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.pdb
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\Projeto celular.genruntimeconfig.cache
+C:\Users\32784630803\Desktop\POO\Projeto celular\obj\Debug\net7.0\ref\Projeto celular.dll

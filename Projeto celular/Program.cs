@@ -7,16 +7,20 @@ using Projeto_celular;
 
 Celular celular = new Celular();
 
-Console.WriteLine($"Digite a Cor do celular: ");
+Console.ForegroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine($"***** Bem vindo ao Programa Celular*****");
+Console.ResetColor();
+
+Console.Write($"\nDigite a Cor do celular: ");
 celular.cor = Console.ReadLine();
 
-Console.WriteLine($"Digite o Modelo do celular: ");
+Console.Write($"\nDigite o Modelo do celular: ");
 celular.modelo = Console.ReadLine();
 
-Console.WriteLine($"Digite o Tamanho do celular: ");
+Console.Write($"\nDigite o Tamanho do celular: ");
 celular.tamanho = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"O celular está ligado? s/n");
+Console.Write($"\nO celular está ligado? s/n: ");
 string ligado = Console.ReadLine().ToLower();
 
 if (ligado == "s")
@@ -32,28 +36,58 @@ else
     Console.WriteLine($"Caracter inválido!");
 }
 
-Console.ForegroundColor = ConsoleColor.DarkBlue;
-Console.WriteLine(@$"
-
-
+int opcao;
+do
+{
+    Console.ForegroundColor = ConsoleColor.DarkBlue;
+    Console.WriteLine(@$"
 1 - Ligar
 2 - Desligar
 3 - Fazer Ligação
 4 - Mandar Mensagem
-
+0 - Sair
 ");
-Console.ResetColor();
+    Console.ResetColor();
 
-string opcao = Console.ReadLine();
+    opcao = int.Parse(Console.ReadLine());
+
+    switch (opcao)
+    {
+        case 1:
+            {
+                celular.Ligar();
+            }
+            break;
+        case 2:
+            {
+                celular.Desligar();
+            }
+            break;
+        case 3:
+            {
+                celular.FazerLigacao();
+            }
+            break;
+        case 4:
+            {
+                celular.EnviarMensagem();
+            }
+            break;
+            case 0:
+            {
+                Console.WriteLine($"Até Mais!!");
+            }
+            break;
+        default:
+            {
+                Console.WriteLine($"opção inválida");
+
+            }
+            break;
+    }
+} while (opcao != 0);
 
 
-switch (opcao)
-{
-    case value1:
-        break;
-    default:
-        break;
-}
 
 
 
@@ -77,6 +111,3 @@ switch (opcao)
 
 
 
-    
-
-    
