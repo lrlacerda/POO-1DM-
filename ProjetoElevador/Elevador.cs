@@ -17,8 +17,8 @@ namespace ProjetoElevador
         public Elevador(int capacidade, int totalAndares)
         {
             this.andarAtual = 0; // elevador começa no térreo
-            this.totalAndares = totalAndares;
-            this.capacidade = capacidade;
+            this.totalAndares = 10;
+            this.capacidade = 5;
             this.pessoasPresentes = 0; // elevador começa vazio
         }
 
@@ -26,7 +26,16 @@ namespace ProjetoElevador
         {
             if (pessoasPresentes < capacidade)
             {
+                Console.WriteLine("Uma pessoa entrou no elevador.");
+
                 pessoasPresentes++;
+
+                Console.WriteLine("Pessoas no elevador: " + pessoasPresentes);
+                
+            }
+            else
+            {
+                Console.WriteLine($"Entrada não permitida, limite máximo de pessoas!");
             }
         }
 
@@ -40,10 +49,19 @@ namespace ProjetoElevador
 
         public void Subir()
         {
-            if (andarAtual < totalAndares)
+            if (andarAtual <= totalAndares)
             {
+                Console.WriteLine("O elevador subiu para o andar.");
+
                 andarAtual++;
+
+                Console.WriteLine("Andar: " + andarAtual);
             }
+            else
+            {
+                Console.WriteLine($"Ultimo andar!");
+            }
+
         }
 
         public void Descer()
@@ -52,47 +70,6 @@ namespace ProjetoElevador
             {
                 andarAtual--;
             }
-        }
-
-
-        public int GetAndarAtual()
-        {
-            return andarAtual;
-        }
-
-        public int GetTotalAndares()
-        {
-            return totalAndares;
-        }
-
-        public int GetCapacidade()
-        {
-            return capacidade;
-        }
-
-        public int GetPessoasPresentes()
-        {
-            return pessoasPresentes;
-        }
-
-        public void SetAndarAtual(int andarAtual)
-        {
-            this.andarAtual = andarAtual;
-        }
-
-        public void SetTotalAndares(int totalAndares)
-        {
-            this.totalAndares = totalAndares;
-        }
-
-        public void SetCapacidade(int capacidade)
-        {
-            this.capacidade = capacidade;
-        }
-
-        public void SetPessoasPresentes(int pessoasPresentes)
-        {
-            this.pessoasPresentes = pessoasPresentes;
         }
     }
 

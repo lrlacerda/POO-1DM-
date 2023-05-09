@@ -15,76 +15,52 @@
 
 using ProjetoElevador;
 
-Elevador elevador = new Elevador(8, 10);
+Elevador elevador = new Elevador(5, 10);
 
-Console.ForegroundColor = ConsoleColor.DarkGreen;
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
 Console.WriteLine($"*****Sistema Elevador*****");
 Console.ResetColor();
 
-
-Console.WriteLine($"Andar atual: {elevador.GetAndarAtual()}");
-Console.WriteLine($"Total de andares: {elevador.GetTotalAndares()}");
-Console.WriteLine($"Capacidade: {elevador.GetCapacidade()}");
-Console.WriteLine($"Pessoas presentes: {elevador.GetPessoasPresentes()}");
-
-Console.WriteLine("\nEntrando duas pessoas:");
-elevador.Entrar();
-elevador.Entrar();
-
-Console.WriteLine($"Pessoas presentes: {elevador.GetPessoasPresentes()}");
-
-Console.WriteLine("\nDigite o andar desejado:");
-int andarDesejado = int.Parse(Console.ReadLine());
-
-if (andarDesejado > elevador.GetAndarAtual())
+// Loop infinito para simular a utilização do elevador
+while (true)
 {
-    for (int i = 0; i < andarDesejado - elevador.GetAndarAtual(); i++)
+    Console.WriteLine("Andar atual: " + elevador.andarAtual);
+    Console.WriteLine("Pessoas presentes: " + elevador.pessoasPresentes);
+
+    Console.ForegroundColor = ConsoleColor.DarkBlue;
+    Console.WriteLine("\nSelecione uma opção:");
+    Console.WriteLine("1 - Entrar");
+    Console.WriteLine("2 - Sair");
+    Console.WriteLine("3 - Subir");
+    Console.WriteLine("4 - Descer");
+    Console.ResetColor();
+
+    string opcao = Console.ReadLine();
+
+    switch (opcao)
     {
-        elevador.Subir();
+        case "1":
+            elevador.Entrar();
+            break;
+        case "2":
+            elevador.Sair();
+            Console.WriteLine("Uma pessoa saiu do elevador.");
+            break;
+        case "3":
+            elevador.Subir();
+            break;
+        case "4":
+            elevador.Descer();
+            Console.WriteLine("O elevador desceu para o andar " + elevador.andarAtual + ".");
+            break;
+        default:
+            Console.WriteLine("Opção inválida. Tente novamente.");
+            break;
     }
+
+    Console.WriteLine("Pressione uma tecla para continuar...");
+    Console.ReadKey();
+    Console.Clear();
 }
-else if (andarDesejado < elevador.GetAndarAtual())
-{
-    for (int i = 0; i < elevador.GetAndarAtual() - andarDesejado; i++)
-    {
-        elevador.Descer();
-    }
-}
-
-Console.WriteLine($"Andar atual: {elevador.GetAndarAtual()}");
-
-Console.WriteLine("\nAdicionando mais pessoas:");
-elevador.Entrar();
-elevador.Entrar();
-elevador.Entrar();
-elevador.Entrar();
-
-Console.WriteLine($"Pessoas presentes: {elevador.GetPessoasPresentes()}");
-
-Console.WriteLine("\nTentando adicionar mais pessoas:");
-elevador.Entrar();
-elevador.Entrar();
-
-Console.WriteLine($"Pessoas presentes: {elevador.GetPessoasPresentes()}");
-
-Console.WriteLine("\nSaindo duas pessoas:");
-elevador.Sair();
-elevador.Sair();
-
-Console.WriteLine($"Pessoas presentes: {elevador.GetPessoasPresentes()}");
-
-Console.WriteLine("\nMudando o andar atual:");
-elevador.SetAndarAtual(5);
-
-Console.WriteLine($"Andar atual: {elevador.GetAndarAtual()}");
-
-
-
-
-
-
-
-
-
 
 
