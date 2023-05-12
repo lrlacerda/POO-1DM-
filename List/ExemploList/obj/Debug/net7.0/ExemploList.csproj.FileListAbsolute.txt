@@ -1,0 +1,15 @@
+C:\Users\32784630803\Desktop\POO\List\ExemploList\bin\Debug\net7.0\ExemploList.exe
+C:\Users\32784630803\Desktop\POO\List\ExemploList\bin\Debug\net7.0\ExemploList.deps.json
+C:\Users\32784630803\Desktop\POO\List\ExemploList\bin\Debug\net7.0\ExemploList.runtimeconfig.json
+C:\Users\32784630803\Desktop\POO\List\ExemploList\bin\Debug\net7.0\ExemploList.dll
+C:\Users\32784630803\Desktop\POO\List\ExemploList\bin\Debug\net7.0\ExemploList.pdb
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.csproj.AssemblyReference.cache
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.AssemblyInfoInputs.cache
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.AssemblyInfo.cs
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.csproj.CoreCompileInputs.cache
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.dll
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\refint\ExemploList.dll
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.pdb
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ExemploList.genruntimeconfig.cache
+C:\Users\32784630803\Desktop\POO\List\ExemploList\obj\Debug\net7.0\ref\ExemploList.dll

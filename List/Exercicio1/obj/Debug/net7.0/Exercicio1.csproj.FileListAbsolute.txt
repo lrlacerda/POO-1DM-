@@ -1,0 +1,15 @@
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\bin\Debug\net7.0\Exercicio1.exe
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\bin\Debug\net7.0\Exercicio1.deps.json
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\bin\Debug\net7.0\Exercicio1.runtimeconfig.json
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\bin\Debug\net7.0\Exercicio1.dll
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\bin\Debug\net7.0\Exercicio1.pdb
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.csproj.AssemblyReference.cache
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.AssemblyInfoInputs.cache
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.AssemblyInfo.cs
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.csproj.CoreCompileInputs.cache
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.dll
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\refint\Exercicio1.dll
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.pdb
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\Exercicio1.genruntimeconfig.cache
+C:\Users\32784630803\Desktop\POO\List\Exercicio1\obj\Debug\net7.0\ref\Exercicio1.dll

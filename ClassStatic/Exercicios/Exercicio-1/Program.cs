@@ -49,6 +49,6 @@ while (!sair)
             break;
     }
 
-    Console.ReadKey();
+    Console.ReadLine();
 }
 
