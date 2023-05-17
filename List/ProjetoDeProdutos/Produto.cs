@@ -7,26 +7,35 @@ namespace ProjetoDeProdutos
 {
     public class Produto 
     {
-        public int Codigo { get; set; }
+         public int Codigo { get; set; }
         public string NomeProduto { get; set; }
         public float Preco { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public Marca Marca { get; set; }
-        public Usuario CadastradoPor { get; set; }
-
-        public string Cadastrar()
+        public DateTime DataCadastro { get; set; }        
+        public Marca Marca = new Marca();        
+        public Usuario CadastroPor { get; set; }
+        
+        List<Produto> listaDeProdutos = new List<Produto>();
+        
+        public void Cadastrar()
         {
-            return "Produto cadastrado com sucesso!";
+            //aqui vai a lógica
+            //instanciar o objeto
+            //receber os dados e cadastrar nesse objeto
+            //armazenar o objeto na lista
         }
 
-        public List<Produto> Listar()
+        public void Listar()
         {
-            return new List<Produto>();
+            //aqui vai a lógica
+            //exibir os objetos cadastrados na lista
         }
-
-        public string Deletar(Produto produto)
+        
+        public void Deletar(int codigo)
         {
-            return "Produto deletado com sucesso!";
+            //aqui vai a lógica
+            //buscar um objeto na lista pelo seu código
+            //remove-lo
         }
+        
     }
 }

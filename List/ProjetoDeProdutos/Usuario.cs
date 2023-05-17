@@ -14,21 +14,26 @@ namespace ProjetoDeProdutos
         public DateTime DataCadastro { get; set; }
         public bool Logado { get; set; }
 
-        public string Cadastrar()
+
+        public Usuario()
         {
-            return "Usuário cadastrado com sucesso!";
+            Cadastrar();
         }
 
-        public string Deletar(Usuario usuario)
+        public void Cadastrar()
         {
-            return "Usuário deletado com sucesso!";
+            this.Nome = "Lucas";
+            this.Email = "lrlacerda@gmail.com";
+            this.Senha = "1234";
+            this.DataCadastro = DateTime.Now;
         }
 
-        public Usuario(string nome, string email, string senha)
+        public void Deletar(Usuario usuario)
         {
-            Nome = nome;
-            Email = email;
-            Senha = senha;
+            this.Nome = "";
+            this.Email = "";
+            this.Senha = "";
+            this.DataCadastro = DateTime.Parse("0000-00-00T00:00:00");
         }
 
     }

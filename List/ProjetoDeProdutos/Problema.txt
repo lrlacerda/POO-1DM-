@@ -1,5 +1,6 @@
 // Nesta aula vamos reforçar todos os conceitos aprendidos até o momento, utilizando um sistema completo de gerenciamento de produtos, utilizando boas práticas de desenvolvimento.
 
+//Fazer um programa completo em c# funcionando para ser usado em terminal. Fazer sem banco de dados, utilizar lista.
 // Requisitos
 // A classe Login deve ter um método que vai ser responsável por gerar os menus e todas as funcionalidades gerais do programa
 // Para isso vamos seguir a linha de raciocínio abaixo:

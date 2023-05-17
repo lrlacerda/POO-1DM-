@@ -7,23 +7,36 @@ namespace ProjetoDeProdutos
 {
     public class Marca
     {
-        public int Codigo { get; set; }
+       public int Codigo { get; set; }
         public string NomeMarca { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        public string Cadastrar()
+        List<Marca> listaDeMarcas = new List<Marca>();
+
+        public Marca Cadastrar()
         {
-            return "Marca cadastrada com sucesso!";
+
+            //instanciar o objeto
+            Marca novaMarca = new Marca();
+
+            //receber os dados e cadastrar nesse objeto
+            //armazenar o objeto na lista
+            //retornar o objeto criado
+            return novaMarca;
         }
 
-        public List<Marca> Listar()
+        public void Listar()
         {
-            return new List<Marca>();
+            //aqui vai a lógica
+            //exibir os objetos cadastrados na lista
         }
 
-        public string Deletar(Marca marca)
+        public void Deletar(int codigo)
         {
-            return "Marca deletada com sucesso!";
-        }
+            //aqui vai a lógica
+            //buscar um objeto na lista pelo seu código
+            //remove-lo
     }
+}
+
 }
