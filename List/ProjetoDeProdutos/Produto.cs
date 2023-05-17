@@ -31,13 +31,13 @@ namespace ProjetoDeProdutos
 
             novoProduto.DataCadastro = DateTime.Now;
 
-            // Console.Write("Digite o código da marca do produto:");
-            // int codigoMarca = int.Parse(Console.ReadLine());
-            // novoProduto.Marca = Marca.listaDeMarca.FirstOrDefault(m => m.Codigo == codigoMarca);
+            Console.Write("Digite o código da marca do produto:");
+            int codigoMarca = int.Parse(Console.ReadLine());
+            novoProduto.Marca = Marca.listaDeMarca.FirstOrDefault(m => m.Codigo == codigoMarca);
 
-            // Console.Write("Digite o código do usuário que cadastrou o produto:");
-            // int codigoUsuario = int.Parse(Console.ReadLine());
-            // novoProduto.CadastradoPor = Usuario.ListaUsuarios.FirstOrDefault(u => u.Codigo == codigoUsuario);
+            Console.Write("Digite o código do usuário que cadastrou o produto:");
+            int codigoUsuario = int.Parse(Console.ReadLine());
+            novoProduto.CadastradoPor = Usuario.ListaUsuarios.FirstOrDefault(u => u.Codigo == codigoUsuario);
 
             listaDeProdutos.Add(novoProduto);
         }

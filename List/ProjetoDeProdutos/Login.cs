@@ -24,6 +24,8 @@ namespace ProjetoDeProdutos
         
         public void Logar(Usuario usuario)
         {
+            do
+            {
             Console.Write($"Insira seu email: ");
             string email = Console.ReadLine();
 
@@ -40,6 +42,7 @@ namespace ProjetoDeProdutos
                 this.Logado = false;
                 Console.WriteLine($"Falha ao logar!");
             }
+            } while (Logado == false);
         }
 
         public void Deslogar()
