@@ -7,7 +7,7 @@ namespace ProjetoDeProdutos
 {
     public class Marca
     {
-       public int Codigo { get; set; }
+        public int Codigo { get; set; }
         public string NomeMarca { get; set; }
         public DateTime DataCadastro { get; set; }
 
@@ -16,27 +16,47 @@ namespace ProjetoDeProdutos
         public Marca Cadastrar()
         {
 
-            //instanciar o objeto
             Marca novaMarca = new Marca();
 
-            //receber os dados e cadastrar nesse objeto
-            //armazenar o objeto na lista
-            //retornar o objeto criado
+            Console.WriteLine("Digite o código da marca:");
+            novaMarca.Codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o nome da marca:");
+            novaMarca.NomeMarca = Console.ReadLine();
+
+            novaMarca.DataCadastro = DateTime.Now;
+
+            listaDeMarcas.Add(novaMarca);
+
             return novaMarca;
         }
 
         public void Listar()
         {
-            //aqui vai a lógica
-            //exibir os objetos cadastrados na lista
+            Console.WriteLine("=== LISTA DE MARCAS ===");
+            foreach (var marca in listaDeMarcas)
+            {
+                Console.WriteLine($"Código: {marca.Codigo}");
+                Console.WriteLine($"Nome: {marca.NomeMarca}");
+                Console.WriteLine($"Data de Cadastro: {marca.DataCadastro}");
+                Console.WriteLine("=======================");
+            }
         }
 
         public void Deletar(int codigo)
         {
-            //aqui vai a lógica
-            //buscar um objeto na lista pelo seu código
-            //remove-lo
+            Marca marca = listaDeMarcas.FirstOrDefault(m => m.Codigo == codigo);
+
+            if (marca != null)
+            {
+                listaDeMarcas.Remove(marca);
+                Console.WriteLine("Marca removida com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("Marca não encontrada!");
+            }
+        }
     }
-}
 
 }

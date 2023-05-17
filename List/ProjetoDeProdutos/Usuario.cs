@@ -13,7 +13,7 @@ namespace ProjetoDeProdutos
         public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Logado { get; set; }
-
+        
 
         public Usuario()
         {
@@ -25,7 +25,20 @@ namespace ProjetoDeProdutos
             this.Nome = "Lucas";
             this.Email = "lrlacerda@gmail.com";
             this.Senha = "1234";
-            this.DataCadastro = DateTime.Now;
+
+            // Console.WriteLine("Digite o código do usuário:");
+            // Codigo = int.Parse(Console.ReadLine());
+
+            // Console.WriteLine("Digite o nome do usuário:");
+            // Nome = Console.ReadLine();
+
+            // Console.WriteLine("Digite o email do usuário:");
+            // Email = Console.ReadLine();
+
+            // Console.WriteLine("Digite a senha do usuário:");
+            // Senha = Console.ReadLine();
+
+            // this.DataCadastro = DateTime.Now;
         }
 
         public void Deletar(Usuario usuario)
