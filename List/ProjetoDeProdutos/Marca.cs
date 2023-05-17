@@ -18,10 +18,10 @@ namespace ProjetoDeProdutos
 
             Marca novaMarca = new Marca();
 
-            Console.WriteLine("Digite o código da marca:");
+            Console.Write("Digite o código da marca:");
             novaMarca.Codigo = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o nome da marca:");
+            Console.Write("Digite o nome da marca:");
             novaMarca.NomeMarca = Console.ReadLine();
 
             novaMarca.DataCadastro = DateTime.Now;

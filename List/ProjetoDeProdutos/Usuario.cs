@@ -26,16 +26,16 @@ namespace ProjetoDeProdutos
             this.Email = "lrlacerda@gmail.com";
             this.Senha = "1234";
 
-            // Console.WriteLine("Digite o código do usuário:");
+            // Console.Write("Digite o código do usuário:");
             // Codigo = int.Parse(Console.ReadLine());
 
-            // Console.WriteLine("Digite o nome do usuário:");
+            // Console.Write("Digite o nome do usuário:");
             // Nome = Console.ReadLine();
 
-            // Console.WriteLine("Digite o email do usuário:");
+            // Console.Write("Digite o email do usuário:");
             // Email = Console.ReadLine();
 
-            // Console.WriteLine("Digite a senha do usuário:");
+            // Console.Write("Digite a senha do usuário:");
             // Senha = Console.ReadLine();
 
             // this.DataCadastro = DateTime.Now;
