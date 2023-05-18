@@ -10,7 +10,7 @@ namespace ProjetoDeProdutos
         public bool Logado { get; set; }
 
         public Login()
-        {     
+        {
             Usuario user = new Usuario();
 
             Logar(user);
@@ -21,27 +21,31 @@ namespace ProjetoDeProdutos
             }
         }
 
-        
+
         public void Logar(Usuario usuario)
         {
             do
             {
-            Console.Write($"Insira seu email: ");
-            string email = Console.ReadLine();
+                Console.Write($"Insira seu email: ");
+                string email = Console.ReadLine();
 
-            Console.Write($"Insira sua senha: ");
-            string senha = Console.ReadLine();
+                Console.Write($"Insira sua senha: ");
+                string senha = Console.ReadLine();
 
-            if (email == usuario.Email && senha == usuario.Senha)
-            {
-                this.Logado = true;
-                Console.WriteLine($"Login efetuado com sucesso !");
-            }
-            else
-            {
-                this.Logado = false;
-                Console.WriteLine($"Falha ao logar!");
-            }
+                if (email == usuario.Email && senha == usuario.Senha)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    this.Logado = true;
+                    Console.WriteLine($"Login efetuado com sucesso !");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    this.Logado = false;
+                    Console.WriteLine($"Falha ao logar!");
+                    Console.ResetColor();
+                }
             } while (Logado == false);
         }
 
@@ -59,6 +63,9 @@ namespace ProjetoDeProdutos
 
             do
             {
+                Console.Clear();
+
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.WriteLine(@$"
             1 - Cadastrar Produto
             2 - Listar Produtos
@@ -70,6 +77,7 @@ namespace ProjetoDeProdutos
             ----------------------
             0 - Sair
             ");
+                Console.ResetColor();
 
                 opcao = Console.ReadLine();
 
@@ -113,8 +121,29 @@ namespace ProjetoDeProdutos
                         Console.WriteLine($"Opção inválida!");
                         break;
                 }
+
+                Console.WriteLine("Carregando...");
+                MostrarBarraDeCarregamento();
+
+                Thread.Sleep(1000); // Pausa de 1 segundo para criar o efeito de animação
+
+                Task.Delay(2000).Wait(); // Pausa de 2 segundos antes de limpar a tela
+                Console.Clear();
+
             } while (opcao != "0");
 
+        }
+
+        private void MostrarBarraDeCarregamento()
+        {
+            Console.Write("[");
+            for (int i = 0; i < 20; i++)
+            {
+                Console.Write("█");
+                Thread.Sleep(100);
+            }
+            Console.Write("]");
+            Console.WriteLine();
         }
 
     }

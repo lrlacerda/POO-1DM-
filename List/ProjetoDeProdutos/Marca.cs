@@ -11,22 +11,21 @@ namespace ProjetoDeProdutos
         public string NomeMarca { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        List<Marca> listaDeMarcas = new List<Marca>();
+        public static List<Marca> ListaDeMarcas { get; } = new List<Marca>();
 
         public Marca Cadastrar()
         {
-
             Marca novaMarca = new Marca();
 
-            Console.Write("Digite o código da marca:");
+            Console.Write("Digite o código da marca: ");
             novaMarca.Codigo = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o nome da marca:");
+            Console.Write("Digite o nome da marca: ");
             novaMarca.NomeMarca = Console.ReadLine();
 
             novaMarca.DataCadastro = DateTime.Now;
 
-            listaDeMarcas.Add(novaMarca);
+            ListaDeMarcas.Add(novaMarca);
 
             return novaMarca;
         }
@@ -34,29 +33,57 @@ namespace ProjetoDeProdutos
         public void Listar()
         {
             Console.WriteLine("=== LISTA DE MARCAS ===");
-            foreach (var marca in listaDeMarcas)
+            foreach (var marca in ListaDeMarcas)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine($"Código: {marca.Codigo}");
                 Console.WriteLine($"Nome: {marca.NomeMarca}");
                 Console.WriteLine($"Data de Cadastro: {marca.DataCadastro}");
                 Console.WriteLine("=======================");
+                Console.ResetColor();
             }
         }
 
         public void Deletar(int codigo)
         {
-            Marca marca = listaDeMarcas.FirstOrDefault(m => m.Codigo == codigo);
+            Marca marca = ListaDeMarcas.FirstOrDefault(m => m.Codigo == codigo);
 
             if (marca != null)
             {
-                listaDeMarcas.Remove(marca);
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                ListaDeMarcas.Remove(marca);
                 Console.WriteLine("Marca removida com sucesso!");
             }
             else
             {
                 Console.WriteLine("Marca não encontrada!");
+                Console.ResetColor();
             }
         }
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

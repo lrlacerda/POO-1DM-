@@ -20,22 +20,22 @@ namespace ProjetoDeProdutos
         {
             Produto novoProduto = new Produto();
 
-            Console.Write("Digite o código do produto:");
+            Console.Write("Digite o código do produto: ");
             novoProduto.Codigo = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o nome do produto:");
+            Console.Write("Digite o nome do produto: ");
             novoProduto.NomeProduto = Console.ReadLine();
 
-            Console.Write("Digite o preço do produto:");
+            Console.Write("Digite o preço do produto: ");
             novoProduto.Preco = float.Parse(Console.ReadLine());
 
             novoProduto.DataCadastro = DateTime.Now;
 
             Console.Write("Digite o código da marca do produto:");
             int codigoMarca = int.Parse(Console.ReadLine());
-            novoProduto.Marca = Marca.listaDeMarca.FirstOrDefault(m => m.Codigo == codigoMarca);
+            novoProduto.Marca = Marca.ListaDeMarcas.FirstOrDefault(m => m.Codigo == codigoMarca);
 
-            Console.Write("Digite o código do usuário que cadastrou o produto:");
+            Console.Write("Digite o código do usuário que cadastrou o produto: ");
             int codigoUsuario = int.Parse(Console.ReadLine());
             novoProduto.CadastradoPor = Usuario.ListaUsuarios.FirstOrDefault(u => u.Codigo == codigoUsuario);
 
@@ -47,6 +47,7 @@ namespace ProjetoDeProdutos
             Console.WriteLine("=== LISTA DE PRODUTOS ===");
             foreach (var produto in listaDeProdutos)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine($"Código: {produto.Codigo}");
                 Console.WriteLine($"Nome: {produto.NomeProduto}");
                 Console.WriteLine($"Preço: R${produto.Preco}");
@@ -54,6 +55,7 @@ namespace ProjetoDeProdutos
                 Console.WriteLine($"Marca: {produto.Marca.NomeMarca}");
                 Console.WriteLine($"Cadastrado por: {produto.CadastradoPor.Nome}");
                 Console.WriteLine("=========================");
+                Console.ResetColor();
             }
         }
 

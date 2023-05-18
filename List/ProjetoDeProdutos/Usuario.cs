@@ -13,11 +13,16 @@ namespace ProjetoDeProdutos
         public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Logado { get; set; }
-        
+        public static List<Usuario> ListaUsuarios { get; } = new List<Usuario>();
+
 
         public Usuario()
         {
-            Cadastrar();
+            {
+                ListaUsuarios.Add(this);
+                Cadastrar();
+            }
+
         }
 
         public void Cadastrar()
