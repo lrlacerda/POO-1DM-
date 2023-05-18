@@ -78,6 +78,10 @@ namespace ProjetoDeProdutos
                 Console.Clear();
 
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine($"Bem vindo ao sistema de cadastro de produto!!");
+                Console.WriteLine($"Escolha uma das opsões para continuar...");
+                
+                
                 Console.WriteLine(@$"
             1 - Cadastrar Produto
             2 - Listar Produtos
