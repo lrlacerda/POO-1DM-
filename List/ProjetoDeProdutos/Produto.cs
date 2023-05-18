@@ -40,11 +40,15 @@ namespace ProjetoDeProdutos
             novoProduto.CadastradoPor = Usuario.ListaUsuarios.FirstOrDefault(u => u.Codigo == codigoUsuario);
 
             listaDeProdutos.Add(novoProduto);
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"\nProduto cadastrada com sucesso!");
+            Console.ResetColor();
         }
 
         public void Listar()
         {
-            Console.WriteLine("=== LISTA DE PRODUTOS ===");
+            Console.WriteLine("\n=== LISTA DE PRODUTOS ===\n");
             foreach (var produto in listaDeProdutos)
             {
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -66,11 +70,11 @@ namespace ProjetoDeProdutos
             if (produto != null)
             {
                 listaDeProdutos.Remove(produto);
-                Console.WriteLine("Produto removido com sucesso!");
+                Console.WriteLine("\nProduto removido com sucesso!");
             }
             else
             {
-                Console.WriteLine("Produto não encontrado!");
+                Console.WriteLine("\nProduto não encontrado!");
             }
         }
 

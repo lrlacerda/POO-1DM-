@@ -27,12 +27,17 @@ namespace ProjetoDeProdutos
 
             ListaDeMarcas.Add(novaMarca);
 
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"\nMarca cadastrada com sucesso!");
+            Console.ResetColor();
+            
+
             return novaMarca;
         }
 
         public void Listar()
         {
-            Console.WriteLine("=== LISTA DE MARCAS ===");
+            Console.WriteLine("\n=== LISTA DE MARCAS ===\n");
             foreach (var marca in ListaDeMarcas)
             {
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -52,11 +57,11 @@ namespace ProjetoDeProdutos
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 ListaDeMarcas.Remove(marca);
-                Console.WriteLine("Marca removida com sucesso!");
+                Console.WriteLine("\nMarca removida com sucesso!");
             }
             else
             {
-                Console.WriteLine("Marca não encontrada!");
+                Console.WriteLine("\nMarca não encontrada!");
                 Console.ResetColor();
             }
         }

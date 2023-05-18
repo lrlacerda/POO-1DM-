@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ProjetoDeProdutos
 {
     public class Login
@@ -21,29 +22,39 @@ namespace ProjetoDeProdutos
             }
         }
 
-
         public void Logar(Usuario usuario)
         {
             do
             {
-                Console.Write($"Insira seu email: ");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.WriteLine($"\nFazer Login!\n");
+                Console.ResetColor();
+                
+                Console.Write($"\nInsira seu email: ");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 string email = Console.ReadLine();
+                Console.ResetColor();
 
                 Console.Write($"Insira sua senha: ");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 string senha = Console.ReadLine();
+                Console.ResetColor();
 
                 if (email == usuario.Email && senha == usuario.Senha)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                     this.Logado = true;
-                    Console.WriteLine($"Login efetuado com sucesso !");
+                    Console.WriteLine($"\nLogin efetuado com sucesso !");
                     Console.ResetColor();
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     this.Logado = false;
-                    Console.WriteLine($"Falha ao logar!");
+                    Console.WriteLine(@$"
+                    Falha ao logar! 
+                    Usuario ou senha inválidos...
+                    ");
                     Console.ResetColor();
                 }
             } while (Logado == false);
@@ -58,6 +69,7 @@ namespace ProjetoDeProdutos
         {
             Produto produto = new Produto();
             Marca marca = new Marca();
+            Usuario usuario = new Usuario();
 
             string opcao;
 
@@ -74,6 +86,9 @@ namespace ProjetoDeProdutos
             4 - Cadastrar Marca
             5 - Listar Marcas
             6 - Remover Marca
+            ----------------------
+            7 - Cadastrar Usuário
+            8 - Deletar Usuários
             ----------------------
             0 - Sair
             ");
@@ -108,11 +123,20 @@ namespace ProjetoDeProdutos
                         break;
                     case "6":
 
-                        Console.WriteLine($"Informe o código a ser removido: ");
+                        Console.Write($"Informe o código a ser removido: ");
                         int codigoMarca = int.Parse(Console.ReadLine());
 
                         marca.Deletar(codigoMarca);
                         break;
+
+                        case "7":
+                        usuario.Cadastrar();
+                        break;
+
+                        case "8":
+                        usuario.Deletar(usuario);
+                        break;
+
                     case "0":
 
                         Console.WriteLine($"Programa encerrado !");
@@ -127,7 +151,7 @@ namespace ProjetoDeProdutos
 
                 Thread.Sleep(1000); // Pausa de 1 segundo para criar o efeito de animação
 
-                Task.Delay(2000).Wait(); // Pausa de 2 segundos antes de limpar a tela
+                Task.Delay(1000).Wait(); // Pausa de 1 segundos antes de limpar a tela
                 Console.Clear();
 
             } while (opcao != "0");
@@ -145,6 +169,5 @@ namespace ProjetoDeProdutos
             Console.Write("]");
             Console.WriteLine();
         }
-
     }
 }
