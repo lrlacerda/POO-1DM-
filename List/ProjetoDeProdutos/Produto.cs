@@ -51,21 +51,30 @@ namespace ProjetoDeProdutos
             Console.WriteLine("\n=== LISTA DE PRODUTOS ===\n");
             foreach (var produto in listaDeProdutos)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine($"Código: {produto.Codigo}");
-                Console.WriteLine($"Nome: {produto.NomeProduto}");
-                Console.WriteLine($"Preço: R${produto.Preco}");
-                Console.WriteLine($"Data de Cadastro: {produto.DataCadastro}");
-                Console.WriteLine($"Marca: {produto.Marca.NomeMarca}");
-                Console.WriteLine($"Cadastrado por: {produto.CadastradoPor.Nome}");
-                Console.WriteLine("=========================");
-                Console.ResetColor();
+                try
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine($"\nCódigo: {produto.Codigo}");
+                    Console.WriteLine($"Nome: {produto.NomeProduto}");
+                    Console.WriteLine($"Preço: {produto.Preco:C}");
+                    Console.WriteLine($"Data de Cadastro: {produto.DataCadastro}");
+                    Console.WriteLine($"Marca: {produto.Marca.NomeMarca}");
+                    Console.WriteLine($"Cadastrado por: {produto.CadastradoPor.Nome}");
+                    Console.WriteLine("=========================");
+                    Console.ResetColor();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"\n************************");
+                }
             }
         }
 
+
         public void Deletar(int codigo)
         {
-            Produto produto = listaDeProdutos.FirstOrDefault(p => p.Codigo == codigo);
+            Produto produto = listaDeProdutos.Find(p => p.Codigo == codigo);
+
 
             if (produto != null)
             {

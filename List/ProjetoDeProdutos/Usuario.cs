@@ -28,27 +28,28 @@ namespace ProjetoDeProdutos
         public void Cadastrar()
         {
 
-            this.Nome = "Lucas";
-            this.Email = "lrlacerda@gmail.com";
-            this.Senha = "1234";
+            // this.Nome = "Lucas";
+            // this.Email = "lrlacerda@gmail.com";
+            // this.Senha = "1234";
 
-            // Console.ForegroundColor = ConsoleColor.DarkBlue;
-            // Console.WriteLine($"\nCadastre um Usuario para fazer o Login!\n");
-            // Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine($"\nCadastre um Usuario para fazer o Login!\n");
+            Console.ResetColor();
             
-            // Console.Write("Digite o código do usuário:");
-            // Codigo = int.Parse(Console.ReadLine());
+            Console.Write("Digite o código do usuário: ");
+            Codigo = int.Parse(Console.ReadLine());
 
-            // Console.Write("Digite o nome do usuário:");
-            // Nome = Console.ReadLine();
+            Console.Write("Digite o nome do usuário: ");
+            Nome = Console.ReadLine();
 
-            // Console.Write("Digite o email do usuário:");
-            // Email = Console.ReadLine();
+            Console.Write("Digite o email do usuário:");
+            Email = Console.ReadLine();
 
-            // Console.Write("Digite a senha do usuário:");
-            // Senha = Console.ReadLine();
+            Console.Write("Digite a senha do usuário: ");
+            Senha = Console.ReadLine();
 
             this.DataCadastro = DateTime.Now;
+            
         }
 
         public void Deletar(Usuario usuario)

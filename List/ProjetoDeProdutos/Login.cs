@@ -9,12 +9,13 @@ namespace ProjetoDeProdutos
     public class Login
     {
         public bool Logado { get; set; }
+        private Usuario usuario { get; set; }
 
         public Login()
         {
-            Usuario user = new Usuario();
+            this.usuario = new Usuario();
 
-            Logar(user);
+            Logar(usuario);
 
             if (Logado == true)
             {
@@ -29,7 +30,7 @@ namespace ProjetoDeProdutos
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine($"\nFazer Login!\n");
                 Console.ResetColor();
-                
+
                 Console.Write($"\nInsira seu email: ");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 string email = Console.ReadLine();
@@ -57,6 +58,8 @@ namespace ProjetoDeProdutos
                     ");
                     Console.ResetColor();
                 }
+
+
             } while (Logado == false);
         }
 
@@ -69,7 +72,7 @@ namespace ProjetoDeProdutos
         {
             Produto produto = new Produto();
             Marca marca = new Marca();
-            Usuario usuario = new Usuario();
+
 
             string opcao;
 
@@ -80,8 +83,8 @@ namespace ProjetoDeProdutos
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.WriteLine($"Bem vindo ao sistema de cadastro de produto!!");
                 Console.WriteLine($"Escolha uma das opsões para continuar...");
-                
-                
+
+
                 Console.WriteLine(@$"
             1 - Cadastrar Produto
             2 - Listar Produtos
@@ -133,11 +136,11 @@ namespace ProjetoDeProdutos
                         marca.Deletar(codigoMarca);
                         break;
 
-                        case "7":
+                    case "7":
                         usuario.Cadastrar();
                         break;
 
-                        case "8":
+                    case "8":
                         usuario.Deletar(usuario);
                         break;
 
