@@ -22,5 +22,21 @@ namespace MVC_Console.View
             }
 
         }
+
+        public Produto Cadastrar()
+        {
+            Produto novoProduto = new Produto();
+
+            Console.WriteLine($"Informe o Código: ");
+            novoProduto.Codigo = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine($"Informe o Nome: ");
+            novoProduto.Nome = Console.ReadLine();
+
+            Console.WriteLine($"Informe o Preço: ");
+            novoProduto.Preco = int.Parse(Console.ReadLine());
+            
+            return novoProduto;
+        }
     }
 }

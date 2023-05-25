@@ -22,5 +22,16 @@ namespace MVC_Console.Controller
             //chamada do método de exibição (View) recebendo como argumento a lista
             produtoView.Listar(produtos);
         }
+
+        
+        //método controlador para acessar o cadastro de produto
+        public void CadastrarProduto()
+        {
+            //chama para a view que recebe cada objeto a ser inserido no CSV
+            Produto novoProduto = produtoView.Cadastrar();
+
+            //CHAMA PARA A MODEL PARA INSERIR ESSE OBJETO NO CSV
+            produto.Inserir(novoProduto);
+        }
     }
 }

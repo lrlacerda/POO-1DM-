@@ -29,7 +29,7 @@ namespace MVC_Console.Model
 
             //se não tiver um arquivo csv no caminho, então cria-se um
             if (!File.Exists(PATH))
-            {   
+            {
                 File.Create(PATH);
             }
         }
@@ -59,6 +59,22 @@ namespace MVC_Console.Model
             }
 
             return produtos;
+        }
+
+        //método para preparar a linha do CSV
+        public string PrepararLinhasCSV(Produto p)
+        {
+            return $"{p.Codigo};{p.Nome};{p.Preco}";
+        }
+
+        //método para inserir o produto no arquivo CSV
+        public void Inserir(Produto p)
+        {
+            //array que vai armazenar as linhas (cada "objeto")
+            string[] linhas = { PrepararLinhasCSV(p) };
+
+            //vai até o arquivo insere todas as linhas
+            File.AppendAllLines(PATH, linhas);
         }
     }
 }

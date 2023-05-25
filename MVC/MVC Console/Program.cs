@@ -6,3 +6,4 @@ Produto produto = new Produto();
 ProdutoController controller = new ProdutoController();
 
 controller.ListarProduto();
+
